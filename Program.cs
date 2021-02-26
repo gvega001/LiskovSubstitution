@@ -8,9 +8,11 @@ namespace LiskovSubstitution
 {
     class Program
     {
-        static void Main(string[] args)
+        public static int Area(Rectangle rectangle) => rectangle.Width * rectangle.Height;
+        public static void Main(string[] args)
         {
-
+            Rectangle rectangle = new Rectangle();
+            Console.WriteLine(rectangle+" has area" +Area(rectangle));
         }
     }
 }
