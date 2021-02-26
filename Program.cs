@@ -13,6 +13,11 @@ namespace LiskovSubstitution
         {
             Rectangle rectangle = new Rectangle();
             Console.WriteLine(rectangle+" has area" +Area(rectangle));
+
+            Square square = new Square();
+
+            square.Width = 4;
+            Console.WriteLine($"{square} has are {Area(square)}");
         }
     }
 }
